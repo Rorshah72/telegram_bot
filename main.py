@@ -32,7 +32,7 @@ async def echo(message: types.Message):
             if user_data_name[1] == " dota 2":
                 for item in users:
                     if item.user_check(users_online.get('data-steamid')):
-                        await message.answer(f'В доті: {user_data_name[0]}, {item.get_userid()}')
+                        await message.answer(f'В доті: {user_data_name[0]}:, {item.get_userid()}')
                     else:
                         continue
             print(f'В мережі: {user_data_name[0]} його steamid: {users_online.get("data-steamid")}')
